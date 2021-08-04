@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-content: flex-start;
+}
+
+#screen {
+  position: relative;
+  width: min-content;
+  overflow: hidden;
+}
+
+#bias-line {
+  position: absolute;
+  width: 100%;
+  border: 2px solid rgb(240, 50, 50);
+}
+
+#test-line {
+  position: absolute;
+  width: 100%;
+  border: 2px solid rgb(0, 50, 240);
+}
+
+#lains {
+  display: flex;
+  flex-direction: row;
+}
+
+.lain {
+  position: relative;
+  width: 48px;
+  height: 512px;
+  border: 1px solid black;
+  background: white;
+  transition: background 50ms;
+}
+
+.lain.active {
+  background: rgb(243, 220, 228);
+}
+
+.note {
+  position: absolute;
+  bottom: 0px;
+  width: 48px;
+  height: 10px;
+  background: rgb(220, 60, 60);
+  transform: translateY(-9999);
+}
+
+#judgement {
+  font-size: 3rem;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  height: auto;
+  transform: translateX(-50%);
+}

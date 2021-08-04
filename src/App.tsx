@@ -1,5 +1,5 @@
 function App() {
-  return <div className="App">REACT REGION</div>;
+  return <div className="App">REACT REGION</div>
 }
 
-export default App;
+export default App
